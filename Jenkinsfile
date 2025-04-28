@@ -11,9 +11,7 @@ node {
     
     stage('Clone Repo') { // for display purposes
       // Get some code from a GitHub repository
-      git 'https://github.com/vikas4cloud/DevOps-Example.git'
-      // Get the Maven tool.
-      // ** NOTE: This 'maven-3.5.2' Maven tool must be configured
+https://github.com/HareeshaBadepalli/DevOps-Example.git
       // **       in the global configuration.           
       mvnHome = tool 'maven-3.5.2'
     }    
@@ -41,7 +39,7 @@ node {
 	// sh "docker images | awk '{print $3}' | awk 'NR==2'"
 	//sh echo "Enter the docker lattest imageID"
 	//sh "read imageid"
-	   sh "docker tag 65769e9a7b06  badepallihareesha123/myapplication" //must change your name and tag no
+	   sh "docker tag cf59889a13ea  badepallihareesha123/myapplication" //must change your name and tag no
         sh "docker push   badepallihareesha123/myapplication"
   }
 }
