@@ -31,7 +31,7 @@ https://github.com/HareeshaBadepalli/DevOps-Example.git
       echo "Docker Image Tag Name: ${dockerImageTag}"
 	  
         sh "docker images"
-        sh "docker login -u badepallihareesha123 -p Bhareesha@123" // put PWD
+        sh "docker login -u 995932 -p Bhareesha@123" // put PWD
 	
 }
     stage('Docker push'){
@@ -39,7 +39,7 @@ https://github.com/HareeshaBadepalli/DevOps-Example.git
 	// sh "docker images | awk '{print $3}' | awk 'NR==2'"
 	//sh echo "Enter the docker lattest imageID"
 	//sh "read imageid"
-	   sh "docker tag cf59889a13ea  badepallihareesha123/myapplication" //must change your name and tag no
-        sh "docker push   badepallihareesha123/myapplication"
+	   sh "docker tag cf59889a13ea  995932/myapplication" //must change your name and tag no
+        sh "docker push  995932/myapplication"
   }
 }
